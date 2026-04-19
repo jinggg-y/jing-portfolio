@@ -20,7 +20,7 @@ export const Navbar = () => {
                     <DarkModeHandler />
                 </li>
                 <li>
-                    <a className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md ml-6 text-white" href="jingyang-cv.pdf" download>Resume</a>
+                    <a className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md ml-6 text-white" href="JingYang_CV.docx" download>Resume</a>
                 </li>
             </ul>
         </nav>
