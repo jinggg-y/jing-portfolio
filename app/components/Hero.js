@@ -17,10 +17,13 @@ export const Hero = () => {
                         <AiFillLinkedin />
                     </a>
                 </h2>
-                <h3 className="text-2xl text-neutral-700 leading-7.5 font-semibold lg:text-3xl dark:text-red-200">ICT Business Analyst</h3>
+                <h3 className="text-2xl text-neutral-700 leading-7.5 font-semibold lg:text-3xl dark:text-red-200">Senior Technical Solution Analyst</h3>
 
-                <p className="text-md pt-10 leading-7 max-w-2xl mx-auto lg:text-lg" data-aos="flip-up" data-aos-duration="1000">Passionate about technology transformation and digital solutions, I am bringing over 2 years of experience in business analysis and consulting. <span className="hidden sm:inline">With hands-on experience in Agile and Waterfall methodologies, cloud adoption, data migration, and process optimisation, I excel in delivering high-quality, outcome-orientated solutions that drive efficiency, innovation, and business success.</span>
+                <p className="text-md pt-10 leading-7 max-w-2xl mx-auto lg:text-lg" data-aos="flip-up" data-aos-duration="1000">
+                    Delivering user-centric digital solutions, business process transformation, and technology modernisation.
+                    Specialising in AI adoption, IAM governance, Agile delivery, and cross-functional stakeholder engagement.
                 </p>
+
                 <p className="text-md pt-4 leading-7 lg:text-lg max-w-2xl mx-auto" data-aos="flip-up" data-aos-duration="1000">Let's connect and make an impact!</p>
             </div>
         </div>

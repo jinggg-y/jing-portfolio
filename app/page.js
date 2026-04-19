@@ -9,6 +9,8 @@ import Image from "next/image";
 import profile from "../public/profile.png"
 import deloitte from "../public/deloitte.svg"
 import dltx from "../public/dltx_logo.jpg"
+import racq from "../public/racq.svg"
+import workingmouse from "../public/workingmouse.svg"
 
 import { AiFillLinkedin } from "react-icons/ai";
 import { BiWinkSmile } from "react-icons/bi";
@@ -69,19 +71,100 @@ export default function Home() {
 
       {/* Experience */}
       <section className="px-8 py-16 md:px-30 lg:px-80">
-        <h2 className="p-8 leading-12 dark:text-stone-400">I've worked as a <span className="font-semibold text-rose-950 dark:text-white"> consultant</span> or a <span className="font-semibold text-rose-950 dark:text-white">business analyst</span> for:</h2>
+        <h2 className="p-8 leading-12 dark:text-stone-400">Professional <span className="font-semibold text-rose-950 dark:text-white">Experience</span></h2>
 
-        <div className="lg:flex">
-          <div className="rounded-xl shadow-xl mx-8 mb-6 p-8 bg-white lg:w-150 dark:bg-stone-800 dark:border-1 dark:border-stone-700">
-            <Image src={deloitte} width={150} height={150} className="bg-black px-4 py-3 rounded-lg mb-2" />
-            <p className="py-3 font-semibold md:text-lg">Engineering Strategy & Architecture Advisory Analyst</p>
-            <p className="pb-3 md:text-lg">Cloud and Engineering Practice</p>
+        <div className="flex flex-col gap-6 mx-8">
+
+          {/* RACQ */}
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div>
+                <Image src={racq} width={100} height={40} className="mb-3" alt="RACQ" />
+                <p className="font-semibold md:text-lg dark:text-white">Senior Technical Solution Analyst</p>
+              </div>
+              <p className="text-sm text-neutral-500 dark:text-stone-400 mt-1 md:mt-0 md:text-right">Nov 2025 – Present · Brisbane</p>
+            </div>
+            <ul className="list-disc list-outside ml-4 space-y-1 leading-6 md:text-base text-sm dark:text-stone-100">
+              <li>Pioneered AI adoption by identifying high-value use cases and delivering squad-wide training, measurably lifting AI maturity across the team.</li>
+              <li>Leveraged GitHub Copilot to accelerate analysis and solution design across 10+ digital initiatives, reducing documentation cycle times.</li>
+              <li>Owned 120+ development tickets (user stories, technical tasks, acceptance criteria), ensuring end-to-end Agile delivery and full traceability.</li>
+              <li>Led Agile uplift across 2 squads, standardising ways of working and enabling a predictable, sustainable delivery cadence.</li>
+              <li>Facilitated IAM and IT risk audits across 2+ cycles, achieving compliance with security and governance standards.</li>
+              <li>Enabled Adobe Journey Optimizer implementation to enhance customer journey orchestration and personalised communications at scale.</li>
+            </ul>
           </div>
-          <div className="rounded-xl shadow-xl mx-8 mb-6 p-8 bg-white lg:w-150 dark:bg-stone-800 dark:border-1 dark:border-stone-700">
-            <Image src={dltx} width={150} height={100} />
-            <p className="py-3 font-semibold md:text-lg">Junior Business Analyst</p>
-            <p className="pb-3 md:text-lg">Blockchain and Fintech Industry</p>
+
+          {/* WorkingMouse */}
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div>
+                <Image src={workingmouse} width={160} height={40} className="mb-3" alt="WorkingMouse" />
+                <p className="font-semibold md:text-lg dark:text-white">Technical Business Analyst</p>
+              </div>
+              <p className="text-sm text-neutral-500 dark:text-stone-400 mt-1 md:mt-0 md:text-right">Jun 2025 – Aug 2025 · Brisbane</p>
+            </div>
+            <ul className="list-disc list-outside ml-4 space-y-1 leading-6 md:text-base text-sm dark:text-stone-100">
+              <li>Onboarded within 2 weeks to a government platform modernisation project, rapidly establishing delivery momentum with developers.</li>
+              <li>Analysed 2,200+ acceptance criteria to ensure alignment and traceability with complex business objectives.</li>
+              <li>Facilitated workshops with executives and SMEs using Goal-Oriented Requirements Engineering, resolving requirement conflicts and reducing rework.</li>
+              <li>Coordinated full UAT cycle, including defect triage, test scenario creation, and client-facing documentation including user guides and scope clarifications.</li>
+              <li>Applied Agile and CI/CD practices, contributing iterative improvements for a government platform.</li>
+            </ul>
           </div>
+
+          {/* Deloitte */}
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div>
+                <Image src={deloitte} width={130} height={40} className="bg-black px-4 py-2 rounded-lg mb-3" alt="Deloitte" />
+                <p className="font-semibold md:text-lg dark:text-white">Engineering Strategy & Architecture Analyst</p>
+                <p className="text-sm text-neutral-500 dark:text-stone-400">Cloud and Engineering Practice</p>
+              </div>
+              <p className="text-sm text-neutral-500 dark:text-stone-400 mt-1 md:mt-0 md:text-right">Mar 2024 – Mar 2025 · Brisbane</p>
+            </div>
+            <ul className="list-disc list-outside ml-4 space-y-1 leading-6 md:text-base text-sm mt-3 dark:text-stone-100">
+              <li>Facilitated 100+ cross-border workshops and stand-ups, translating complex stakeholder requirements into actionable delivery plans.</li>
+              <li>Developed automated PowerShell ETL scripts and Excel dashboards, eliminating 10+ hours/week of manual reporting and providing real-time KPI visibility.</li>
+              <li>Managed 1,400+ Jira tickets and 30+ Confluence pages, maintaining accurate project records for a large-scale data migration.</li>
+              <li>Authored 7+ Statements of Work (SOW) and business cases aligned to healthcare regulatory frameworks, supporting executive decision-making.</li>
+              <li>Led practice development by transforming internal data into compelling visual narratives, showcasing business capabilities to senior leadership.</li>
+            </ul>
+          </div>
+
+          {/* DLTx */}
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div>
+                <Image src={dltx} width={130} height={50} className="rounded-lg mb-3" alt="DLTx Labs" />
+                <p className="font-semibold md:text-lg dark:text-white">Junior Business Analyst</p>
+                <p className="text-sm text-neutral-500 dark:text-stone-400">Blockchain and Fintech</p>
+              </div>
+              <p className="text-sm text-neutral-500 dark:text-stone-400 mt-1 md:mt-0 md:text-right">Aug 2022 – Feb 2024 · Brisbane</p>
+            </div>
+            <ul className="list-disc list-outside ml-4 space-y-1 leading-6 md:text-base text-sm mt-3 dark:text-stone-100">
+              <li>Facilitated client-facing workshops, gathered requirements, and developed user story maps and process diagrams for technical specifications.</li>
+              <li>Managed Agile ceremonies (stand-ups, sprint planning, retrospectives) and maintained requirements via Jira and Confluence.</li>
+              <li>Created 50+ UX design frames and conducted user testing for multiple web application products.</li>
+              <li>Advised 10+ client boards on blockchain and fintech solutions, communicating complex concepts to both technical and non-technical audiences.</li>
+            </ul>
+          </div>
+
+          {/* UQ AI Collaboratory */}
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div>
+                <p className="text-xl font-bold text-rose-950 dark:text-white">UQ AI Collaboratory</p>
+                <p className="font-semibold md:text-lg dark:text-white">Research Intern</p>
+                <p className="text-sm text-neutral-500 dark:text-stone-400">University of Queensland</p>
+              </div>
+              <p className="text-sm text-neutral-500 dark:text-stone-400 mt-1 md:mt-0 md:text-right">Jan 2022 – Jun 2022 · Brisbane</p>
+            </div>
+            <ul className="list-disc list-outside ml-4 space-y-1 leading-6 md:text-base text-sm mt-3 dark:text-stone-100">
+              <li>Analysed and classified EEG data using Python and CNN-based ML algorithms, contributing to peer-reviewed depression detection research.</li>
+              <li>Developed mobile application prototypes and conducted structured user research and usability testing.</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
@@ -89,18 +172,22 @@ export default function Home() {
       <section className="px-8 py-16 bg-rose-gray md:px-30 lg:px-80 dark:bg-neutral-900">
         <h2 className="p-8 leading-12 dark:text-stone-400">I've been in <span className="font-semibold text-rose-950 dark:text-white"> various industries</span> and <span className="font-semibold text-rose-950 dark:text-white">domains</span>:</h2>
 
-        <div className="lg:flex">
-          <div className="rounded-xl shadow-xl mx-8 mb-6 p-8 bg-white lg:w-150 dark:bg-stone-800 dark:border-1 dark:border-stone-700">
-            <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Healthcare Industry</p>
-            <p className="pb-3 md:text-lg">Conducted due diligence and execution on data migration for a merge and acquisition in the highly regulated environment.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-8">
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Insurance</p>
+            <p className="pb-3 md:text-lg">Drove AI adoption and digital transformation across insurance products, owning 120+ Agile delivery tickets and enabling IAM governance and Adobe Journey Optimizer implementation at RACQ.</p>
           </div>
-          <div className="rounded-xl shadow-xl mx-8 mb-6 p-8 bg-white lg:w-150 dark:bg-stone-800 dark:border-1 dark:border-stone-700">
-            <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Blockchain and Fintech Industry</p>
-            <p className="pb-3 md:text-lg">Performed agile deliveries across the Software Delivery Life Cycle (SDLC). Collaborated with various stakeholders for requirement elicitation and software quality assurance.</p>
-          </div>
-          <div className="rounded-xl shadow-xl mx-8 mb-6 p-8 bg-white lg:w-150 dark:bg-stone-800 dark:border-1 dark:border-stone-700">
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
             <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Public Sector</p>
-            <p className="pb-3 md:text-lg">Delivered Statements of Work (SOW) and proposal presentation packs for M365 migration projects.</p>
+            <p className="pb-3 md:text-lg">Delivered government platform modernisation using Goal-Oriented Requirements Engineering, coordinating UAT cycles and applying Agile and CI/CD practices. Also delivered SOW and M365 migration proposals for public sector clients.</p>
+          </div>
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Healthcare</p>
+            <p className="pb-3 md:text-lg">Conducted due diligence and execution on data migration for a merger and acquisition in a highly regulated environment, maintaining compliance with data governance standards throughout.</p>
+          </div>
+          <div className="rounded-xl shadow-xl p-8 bg-white dark:bg-stone-800 dark:border dark:border-stone-700" data-aos="fade-up">
+            <p className="py-3 font-semibold text-lg md:text-xl dark:text-white">Blockchain and Fintech</p>
+            <p className="pb-3 md:text-lg">Performed agile deliveries across the SDLC, collaborated with stakeholders for requirement elicitation, and advised 10+ client boards on blockchain and fintech solutions.</p>
           </div>
         </div>
       </section>
