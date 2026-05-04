@@ -19,12 +19,12 @@ export const Hero = () => {
                 </h2>
                 <h3 className="text-2xl text-neutral-700 leading-7.5 font-semibold lg:text-3xl dark:text-red-200">Senior Technical Solution Analyst</h3>
 
-                <p className="text-md pt-10 leading-7 max-w-2xl mx-auto lg:text-lg" data-aos="flip-up" data-aos-duration="1000">
+                <p className="text-md pt-10 leading-7 max-w-2xl mx-auto lg:text-lg">
                     Delivering user-centric digital solutions, business process transformation, and technology modernisation.
                     Specialising in AI adoption, IAM governance, Agile delivery, and cross-functional stakeholder engagement.
                 </p>
 
-                <p className="text-md pt-4 leading-7 lg:text-lg max-w-2xl mx-auto" data-aos="flip-up" data-aos-duration="1000">Let's connect and make an impact!</p>
+                <p className="text-md pt-4 leading-7 lg:text-lg max-w-2xl mx-auto">Let's connect and make an impact!</p>
             </div>
         </div>
     )
